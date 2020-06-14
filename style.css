@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+   
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    
+}
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.container .slider .slide .caption{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border: none; 
+}
+
+.container .slider .slide .caption h2{
+    margin: 0 25px;
+    color: #fff;
+    font-size: 40px;
+}
+.container .slider .slide .caption p{
+    color: #fff;
+    font-size: 15px;
+}
+.container > .slider > .slide.slide1{
+    background: url(img/blackhippy-new-music.jpg) no-repeat center center/cover;    
+}
+.container > .slider > .slide.slide2{
+    background: url(img/KendrickLamar.jpeg) no-repeat center center/cover;    
+}
+.container > .slider > .slide.slide3{
+    background: url(img/ScHoolBoyQ.jpg) no-repeat center center/cover;    
+}
+.container > .slider > .slide.slide4{
+    background: url(img/ab-soul.jpg) no-repeat center center/cover;    
+}
+.container > .slider > .slide.slide5{
+    background: url(img/jay-rock-mtd1-1050x700.jpg) no-repeat center center/cover;    
+}
+
+
+
+@media(max-width: 750px){
+    .container .slider .slide .caption{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+}
